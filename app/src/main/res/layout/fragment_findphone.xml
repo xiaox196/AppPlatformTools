@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/phoneinf_title"
+        layout="@layout/title_bar"></include>
+
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/phoneinf_title"
+        android:id="@+id/hello"
+        android:layout_marginTop="15dp"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/hello"
+        android:id="@+id/showfindphone"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/showfindphone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/stopbutton"
+            android:text="关闭"
+            android:textSize="20dp"
+            android:background="@drawable/btn_white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

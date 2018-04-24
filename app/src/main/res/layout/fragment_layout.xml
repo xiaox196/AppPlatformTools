@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/phone_frament"
+        android:layout_weight="10"
+        android:name="view.cm.com.appmanger.PhoneInfo"
+        ></fragment>
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/liebao_frament"
+        android:layout_weight="10"
+        android:name="view.cm.com.appmanger.LieBaoActivity"
+        ></fragment>
+
+    <RadioGroup
+        android:id="@+id/bottomRG"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/getphone"
+            android:text="手机信息"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/getappliebao"
+            android:text="猎豹应用"
+            />
+    </RadioGroup>
+
+</LinearLayout>

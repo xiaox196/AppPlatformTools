@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/phoneinf_title"
+        layout="@layout/title_bar"></include>
+
+
+    <TextView
+        android:id="@+id/showversion"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        ></TextView>
+
+    <Button
+        android:layout_below="@+id/phoneinf_title"
+        android:layout_marginTop="55dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/help"
+        android:text="帮助"
+        android:background="@drawable/btn_white"/>
+
+    <Button
+        android:layout_below="@+id/help"
+        android:id="@+id/checkupdate"
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="检查更新"
+        android:background="@drawable/btn_white"/>
+</RelativeLayout>
